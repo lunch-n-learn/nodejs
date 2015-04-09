@@ -1,12 +1,8 @@
 # nodejs
 node.js samples
 
-Example 1.
+Example 2 - Add css.
 
-To serve a basic web page, install the http-server module:
-
-sudo npm install http-server -g
-
-and run the code
+run the code:
 
 http-server
