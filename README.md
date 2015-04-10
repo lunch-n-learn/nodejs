@@ -5,14 +5,10 @@ Example 1.
 
 To serve a basic web page, install the http-server module:
 
-sudo npm install http-server -g
+sudo npm install http -g
 
 and run the code
 
-http-server
+node server.js
 
-Example 2 - Add styles
-
-Example 3 - Add javascript
-
-Example 4 - Use a module (jquery)
+Example 5 - Run node on the server, "Hello, World"
