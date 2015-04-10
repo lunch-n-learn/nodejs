@@ -1,14 +1,16 @@
 # nodejs
 node.js samples
 
-Example 1.
-
-To serve a basic web page, install the http-server module:
+Add a project file.
 
 sudo npm install http -g
 
+or
+
+npm install
+
 and run the code
 
-node server.js
+npm start
 
-Example 5 - Run node on the server, "Hello, World"
+Example 6 - Run node on the server, "Hello, World"

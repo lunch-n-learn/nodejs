@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Basic Node Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dcorleyusc@github.com/lunch-n-learn/nodejs.git"
+  },
+  "author": "Don Corley <dcorley@usc.edu>",
+  "license": "GPL3",
+  "bugs": {
+    "url": "https://github.com/lunch-n-learn/nodejs/issues"
+  },
+  "homepage": "https://github.com/lunch-n-learn/nodejs",
+  
+  "dependencies": {
+    "http": "*"
+  }
+}
