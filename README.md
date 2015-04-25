@@ -1,16 +1,9 @@
 # nodejs
 node.js samples
 
-Add a project file.
-
-sudo npm install http -g
-
-or
+Example 7 - Use the connect framework to server static content
 
 npm install
-
-and run the code
-
 npm start
 
-Example 6 - Run node on the server, "Hello, World"
+http://localhost:8080

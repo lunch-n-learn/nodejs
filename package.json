@@ -19,6 +19,6 @@
   "homepage": "https://github.com/lunch-n-learn/nodejs",
   
   "dependencies": {
-    "http": "*"
+    "connect": "1.9.2"
   }
 }
