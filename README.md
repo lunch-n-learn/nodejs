@@ -1,7 +1,7 @@
 # nodejs
 node.js samples
 
-Example 7 - Use the connect framework to server static content
+Example 8 - Use the connect framework to process a submitted form
 
 npm install
 npm start
