@@ -1,15 +1,25 @@
-var connect = require('connect');
+var express = require('express');
+var bodyParser = require('body-parser')
 
-connect()
- .use(connect.bodyParser())
- .use(connect.static(__dirname + "/public"))
- .use(function(req, res) {
-   res.writeHead(200, {'Content-Type': 'text/html'});
-   if (req.url === '/data') {
-     res.end("Hello, " + req.body.name);
-   } else {
-     res.end("Page not found.");
-   }
- })
- .listen(8080, '127.0.0.1');
+var app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+app.get('/', function(req, res){
+  res.sendFile("index.html", {root: './public'});
+});
+
+app.post('/data', function(req, res){
+  res.send('Hello ' + req.body.name);
+});
+
+app.get('/:path', function(req, res){
+  var path = req.params.path ? req.params.path : '/index.html';
+  res.sendFile(path, {root: './public'});
+});
+
+app.listen(8080, '127.0.0.1');
 console.log('Server running at http://127.0.0.1:8080/');

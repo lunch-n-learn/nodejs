@@ -1,7 +1,7 @@
 # nodejs
 node.js samples
 
-Example 8 - Use the connect framework to process a submitted form
+Example 9 - Use the express framework to process a submitted form
 
 npm install
 npm start
