@@ -12,6 +12,10 @@ app.get('/', function(req, res){
   res.sendFile("index.html", {root: './public'});
 });
 
+app.post('/ajax', function(req, res){
+  res.send('Hello ' + req.body.name);
+});
+
 app.post('/data', function(req, res){
   res.send('Hello ' + req.body.name);
 });

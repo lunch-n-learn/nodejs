@@ -1,7 +1,7 @@
 # nodejs
 node.js samples
 
-Example 9 - Use the express framework to process a submitted form
+Example 10 - Use the express framework to process an AJAX request
 
 npm install
 npm start

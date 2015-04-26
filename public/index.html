@@ -12,12 +12,23 @@
           $( "p" ).css("color", "blue");
         }
       });
+
+    $( "#target" ).keyup(function() {
+      $.ajax({
+        url: "ajax",
+        type: "post",
+        data: {name: this.value}
+      }).done(function(res) {
+      	$( "#greeting" ).text(res);
+      });
+    });
+
     });
     </script>
   </head>
   <body>
-    <p>Hello,</p>
-    <p>World</p>
+    <p id="greeting">Hello,<br/>
+    World</p>
     <form action="/data" method="post">
     <p>
       <label for="name">Enter Name:</label><input id="target" type="text" name="name" value="" id="name" />
