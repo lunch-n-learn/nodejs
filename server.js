@@ -25,5 +25,5 @@ app.get('/:path', function(req, res){
   res.sendFile(path, {root: './public'});
 });
 
-app.listen(8080, '127.0.0.1');
-console.log('Server running at http://127.0.0.1:8080/');
+app.listen(8080, '0.0.0.0');
+console.log('Server running at http://0.0.0.0:8080/');
